@@ -1,0 +1,52 @@
+data_mahasiswa = []
+
+def tambah():
+    nama = input("Nama: ")
+    nilai = float(input("Nilai: "))
+    data_mahasiswa.append({"nama": nama, "nilai": nilai})
+    print("Data ditambahkan.")
+
+def tampilkan():
+    if not data_mahasiswa:
+        print("Tidak ada data.")
+    else:
+        for i, mhs in enumerate(data_mahasiswa, start=1):
+            print(f"{i}. {mhs['nama']} - {mhs['nilai']}")
+
+def hapus():
+    nama = input("Nama yang dihapus: ")
+    for mhs in data_mahasiswa:
+        if mhs['nama'].lower() == nama.lower():
+            data_mahasiswa.remove(mhs)
+            print("Data dihapus.")
+            return
+    print("Data tidak ditemukan.")
+
+def ubah():
+    nama = input("Nama yang diubah: ")
+    for mhs in data_mahasiswa:
+        if mhs['nama'].lower() == nama.lower():
+            mhs['nilai'] = float(input("Nilai baru: "))
+            print("Data diubah.")
+            return
+    print("Data tidak ditemukan.")
+
+def menu():
+    while True:
+        print("\n1. Tambah Data\n2. Tampilkan Data\n3. Hapus Data\n4. Ubah Data\n5. Keluar")
+        pilihan = input("Pilih (1-5): ")
+        if pilihan == "1":
+            tambah()
+        elif pilihan == "2":
+            tampilkan()
+        elif pilihan == "3":
+            hapus()
+        elif pilihan == "4":
+            ubah()
+        elif pilihan == "5":
+            print("Selesai.")
+            break
+        else:
+            print("Pilihan tidak valid.")
+
+menu()
