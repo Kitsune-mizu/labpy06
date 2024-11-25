@@ -122,3 +122,19 @@
      * Jika pilihan tidak valid, program meminta input ulang.
 4.	**Selesai:**
 
+# Latihan 1
+**Code Program**
+
+![alt text](image-16.png)
+
+**Output:**
+
+![alt text](image-17.png)
+
+**Penjelasan Input & Output:**
+
+1. **a(5):** Menghitung kuadrat dari **5** → hasilnya **25**.
+2. **b(3, 4):** Menghitung jarak (hipotenusa) berdasarkan formula Pythagoras **(√(3² + 4²))** → hasilnya **5.0**.
+3. **c(1, 2, 3, 4, 5):** Menghitung rata-rata dari **1, 2, 3, 4, dan 5** → hasilnya **3.0**.
+4. **d('hello'):** Menggabungkan huruf-huruf unik dari string **'hello'** (urutan tidak dijamin karena set tidak memiliki urutan).
+
