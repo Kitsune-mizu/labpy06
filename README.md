@@ -2,7 +2,7 @@
 
 ### Contoh kode program sederhana Python3 (Vs Code)
 
-![alt text](image.png)
+![alt text](image.png) 
 ![alt text](image-1.png)
 
 **Penjelasan program:**
